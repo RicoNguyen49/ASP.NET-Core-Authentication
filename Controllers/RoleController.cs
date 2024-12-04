@@ -22,7 +22,6 @@ namespace Authentication.Controllers
             return View(roles);
         }
         [Authorize(Policy = "writepolicy")]
-
         public IActionResult Create()
         {
             return View(new IdentityRole());
